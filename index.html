@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bookend — Privacy Policy</title>
+  <meta name="description" content="Privacy policy for the Bookend app (macOS, iOS/iPadOS, Android)." />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1c1c1e;
+      --muted: #6b6b70;
+      --rule: #e5e5ea;
+      --accent: #2d6cdf;
+      --maxw: 46rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #16171a; --fg: #e9e9ec; --muted: #9b9ba3; --rule: #2a2b30; --accent: #6ea0ff;
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #16171a; --fg: #e9e9ec; --muted: #9b9ba3; --rule: #2a2b30; --accent: #6ea0ff;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 3rem 16px 5rem; }
+    header { border-bottom: 1px solid var(--rule); padding-bottom: 1.25rem; margin-bottom: 2rem; }
+    h1 { font-size: 1.9rem; margin: 0 0 .35rem; letter-spacing: -0.01em; }
+    h2 { font-size: 1.2rem; margin: 2.25rem 0 .5rem; letter-spacing: -0.01em; }
+    p, li { color: var(--fg); }
+    a { color: var(--accent); }
+    .muted { color: var(--muted); font-size: .95rem; }
+    .lede { font-size: 1.08rem; }
+    ul { padding-left: 1.25rem; }
+    li { margin: .35rem 0; }
+    .tldr {
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--accent);
+      border-radius: 10px;
+      padding: 1rem 1.2rem;
+      margin: 1.75rem 0;
+      background: color-mix(in srgb, var(--accent) 6%, transparent);
+    }
+    footer { border-top: 1px solid var(--rule); margin-top: 3rem; padding-top: 1.25rem; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .9em; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Bookend — Privacy Policy</h1>
+      <p class="muted">Last updated: 20 October 2026</p>
+    </header>
+
+    <p class="lede">Bookend is a local-first workspace for structured documents and
+    notes. Your work stays on your device. We do not run servers that collect your
+    data, and we do not track you.</p>
+
+    <div class="tldr">
+      <strong>In short:</strong> Bookend does not collect, transmit, or sell any
+      personal data. The only time information leaves your device is when
+      <em>you</em> choose to use an AI feature, in which case the content you select
+      is sent directly to the AI service <em>you</em> configured — never through us.
+    </div>
+
+    <h2>Who we are</h2>
+    <p>Bookend is developed by Wayfarer Technology. If you have any questions about
+    this policy or your privacy, contact
+    <a href="mailto:bookend@wayfarertechnology.org">bookend@wayfarertechnology.org</a>.</p>
+
+    <h2>Information we collect</h2>
+    <p><strong>None.</strong> Bookend has no analytics, no telemetry, no advertising,
+    and no user accounts. We do not collect your documents, your usage, your location,
+    your contacts, or any identifiers. Your Bookend documents (<code>.bookend</code>
+    files) and app settings are stored locally on your device and in any location you
+    choose to save to (for example the Files app, iCloud Drive, or another folder).
+    We have no access to them.</p>
+
+    <h2>Optional AI features</h2>
+    <p>Bookend can connect to AI services to help you write, research, and generate
+    content. These features are optional and only run when you use them. You configure
+    which service to use — for example a model running locally on your own machine
+    (such as Ollama), or an OpenAI-compatible provider you supply.</p>
+    <ul>
+      <li>When you use an AI feature, the content you choose to process and your
+      prompt are sent <strong>directly from your device to the service you
+      configured</strong>. This data does not pass through the developer's servers.</li>
+      <li>How that content is handled is governed by the privacy policy of the
+      provider you chose. If you use a local model, the data stays on your own
+      hardware.</li>
+      <li>If your provider supports web search and you enable it, your search query
+      is sent to that provider.</li>
+      <li>Any API key or access token you enter is stored securely in your device's
+      Keychain / secure storage and is sent only to the service you configured, as
+      authorization. It is never shared with the developer or anyone else.</li>
+    </ul>
+
+    <h2>Screen colour ("Ambient") mode</h2>
+    <p>On macOS, Bookend offers an optional appearance mode that tints its interface
+    to match your screen. When you turn this on, Bookend samples your screen's colours
+    on your device, in memory, to pick those tints. Nothing is recorded, stored, or
+    transmitted, and the feature requires your explicit opt-in and the system screen-
+    recording permission.</p>
+
+    <h2>Third parties</h2>
+    <p>The only third parties that may receive any data are the AI or search providers
+    you explicitly configure and choose to use, as described above. Bookend includes
+    no third-party analytics, advertising, or tracking SDKs.</p>
+
+    <h2>Children</h2>
+    <p>Bookend is not directed at children and does not knowingly collect any personal
+    information from anyone, including children.</p>
+
+    <h2>Your choices</h2>
+    <p>Because your data lives on your device, you remain in control of it: you can
+    delete your documents and the app at any time, and you can choose whether to use
+    any AI feature. Uninstalling the app removes its local data from your device.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the updated version will be posted on this page with a
+    new "last updated" date.</p>
+
+    <footer>
+      <p class="muted">Bookend is available on macOS and iOS/iPadOS (and Android).
+      This policy applies to all versions of the app.</p>
+    </footer>
+  </div>
+</body>
+</html>
