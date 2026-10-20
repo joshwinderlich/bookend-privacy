@@ -1,10 +1,10 @@
-# Bookend — Privacy Policy site
+# Bookend — site (privacy + support)
 
-The privacy policy for the **Bookend** app (macOS, iOS/iPadOS, Android), published
-via GitHub Pages for the App Store listing.
+Static pages for the **Bookend** app (macOS, iOS/iPadOS, Android), published via
+GitHub Pages for the App Store listing.
 
-- Live: https://bookend.wayfarertechnology.org/
-- Source: [`index.html`](index.html) — a single static page, no build step.
+- Privacy Policy: https://bookend.wayfarertechnology.org/ — [`index.html`](index.html)
+- Support: https://bookend.wayfarertechnology.org/support/ — [`support/index.html`](support/index.html)
 
-Edit `index.html` and push to `main`; GitHub Pages redeploys automatically.
-Update the "Last updated" date whenever the policy changes.
+No build step. Edit the HTML and push to `main`; GitHub Pages redeploys
+automatically. Update the privacy policy's "Last updated" date whenever it changes.

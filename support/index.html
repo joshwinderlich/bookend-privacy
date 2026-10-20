@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bookend — Support</title>
+  <meta name="description" content="Support and contact for the Bookend app (macOS, iOS/iPadOS, Android)." />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1c1c1e;
+      --muted: #6b6b70;
+      --rule: #e5e5ea;
+      --accent: #2d6cdf;
+      --maxw: 46rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #16171a; --fg: #e9e9ec; --muted: #9b9ba3; --rule: #2a2b30; --accent: #6ea0ff;
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #16171a; --fg: #e9e9ec; --muted: #9b9ba3; --rule: #2a2b30; --accent: #6ea0ff;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 3rem 16px 5rem; }
+    header { border-bottom: 1px solid var(--rule); padding-bottom: 1.25rem; margin-bottom: 2rem; }
+    h1 { font-size: 1.9rem; margin: 0 0 .35rem; letter-spacing: -0.01em; }
+    h2 { font-size: 1.2rem; margin: 2.25rem 0 .5rem; letter-spacing: -0.01em; }
+    p, li { color: var(--fg); }
+    a { color: var(--accent); }
+    .muted { color: var(--muted); font-size: .95rem; }
+    .lede { font-size: 1.08rem; }
+    ul { padding-left: 1.25rem; }
+    li { margin: .35rem 0; }
+    .card {
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--accent);
+      border-radius: 10px;
+      padding: 1rem 1.2rem;
+      margin: 1.75rem 0;
+      background: color-mix(in srgb, var(--accent) 6%, transparent);
+    }
+    .card a { font-weight: 600; }
+    footer { border-top: 1px solid var(--rule); margin-top: 3rem; padding-top: 1.25rem; }
+    footer a { margin-right: 1rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Bookend — Support</h1>
+      <p class="muted">Help with the Bookend app for macOS, iOS/iPadOS, and Android.</p>
+    </header>
+
+    <p class="lede">Bookend is a local-first workspace for structured documents and
+    notes. If something isn't working, or you have a question or a feature request,
+    we're happy to help.</p>
+
+    <div class="card">
+      <p style="margin:.2rem 0;">Email us at
+      <a href="mailto:bookend@wayfarertechnology.org">bookend@wayfarertechnology.org</a>.</p>
+      <p class="muted" style="margin:.4rem 0 0;">We read every message and aim to
+      reply within a few business days.</p>
+    </div>
+
+    <h2>Before you write</h2>
+    <p>A few things often resolve an issue quickly:</p>
+    <ul>
+      <li>Make sure you're on the latest version of Bookend from the App Store.</li>
+      <li>Fully quit and reopen the app.</li>
+      <li>Your documents are stored on your device — keeping a backup of important
+      <code>.bookend</code> files (for example in the Files app or iCloud Drive) is
+      always a good idea.</li>
+    </ul>
+
+    <h2>Reporting a problem</h2>
+    <p>So we can help as fast as possible, please include:</p>
+    <ul>
+      <li>Your device and OS version (e.g. iPhone 15, iOS 18.1; or MacBook Air,
+      macOS 15).</li>
+      <li>The Bookend version (shown in the app's About / settings).</li>
+      <li>What you were doing, what you expected, and what happened instead.</li>
+      <li>A screenshot, if it helps show the problem.</li>
+    </ul>
+    <p class="muted">Please don't send sensitive personal information in a support
+    email. We only need enough to reproduce and fix the issue.</p>
+
+    <h2>Privacy</h2>
+    <p>Bookend is local-first and collects no data. See our
+    <a href="../">Privacy Policy</a> for details.</p>
+
+    <footer>
+      <a href="../">Privacy Policy</a>
+      <a href="mailto:bookend@wayfarertechnology.org">Contact</a>
+      <p class="muted" style="margin-top:.8rem;">Bookend is developed by Wayfarer Technology.</p>
+    </footer>
+  </div>
+</body>
+</html>
